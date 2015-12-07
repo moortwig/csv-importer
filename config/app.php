@@ -136,6 +136,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        JeroenG\Packager\PackagerServiceProvider::class,
 
         /*
          * Application Service Providers...
