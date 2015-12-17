@@ -146,7 +146,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        moortwig\csvimporter\csvimporterServiceProvider::class,
+        // moortwig\csvimporter\csvimporterServiceProvider::class,
 
     ],
 
