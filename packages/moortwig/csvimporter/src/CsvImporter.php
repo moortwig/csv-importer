@@ -1,14 +1,11 @@
 <?php
-
-<<<<<<< HEAD
-namespace Moortwig\CsvImporter;
-
-class CsvImporter
-{
-	//
-=======
 namespace Moortwig;
 
+/*
+ * Helper class for easier handling with csv files
+ * Author: Catarina Höstlöf (info@moortwig.se)
+ *
+*/
 class CsvImporter
 {
 	public function getData($file) {
@@ -26,5 +23,4 @@ class CsvImporter
         }
         return $collection;
 	}
->>>>>>> testing
 }
