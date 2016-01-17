@@ -9,6 +9,13 @@ namespace Moortwig\CsvImporter;
 */
 class CsvImporter
 {
+    /**
+    *
+    * @param Resource of type stream
+    * @return array
+    *
+    * This has been tested with a csv file without headers in the CLI.
+    */
 	public function getData($handle) {
 		$collection = [];
 

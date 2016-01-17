@@ -5,6 +5,8 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Moortwig\CsvImporter\CsvImporter;
 
+// This is just a file where I can manually test the helper methods in the CsvImporter package, so it's not a part of the package itself!
+
 class ImportCommand extends Command
 {
     /**
