@@ -1,5 +1,6 @@
 <?php
-namespace Moortwig;
+namespace Moortwig\CsvImporter;
+
 
 /*
  * Helper class for easier handling with csv files
@@ -8,19 +9,17 @@ namespace Moortwig;
 */
 class CsvImporter
 {
-	public function getData($file) {
+	public function getData($handle) {
 		$collection = [];
 
-		// TODO check that $file is valid, throw exception if not
-        $handle = fopen($this->argument('file'), "r");
-
-        if (($handle = fopen($this->argument('file'), "r")) !== FALSE) {
+		if ($handle) {
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
                 $collection[] = $data;
             }
 
             fclose($handle);
         }
+
         return $collection;
 	}
 }

@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Moortwig\CsvImporter;
+use Moortwig\CsvImporter\CsvImporter;
 
 class ImportCommand extends Command
 {
@@ -12,14 +12,14 @@ class ImportCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'import {file}';
+    protected $signature = 'import {filename}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Import a csv file';
 
     // protected $importer;
 
@@ -42,24 +42,10 @@ class ImportCommand extends Command
     public function handle(CsvImporter $importer)
     {
 
+        $handle = fopen($this->argument('filename'), "r");
+        $data = $importer->getData($handle);
 
-        $characters = $importer->getData($this->argument('file'));
-
-        /*$characters = [];
-
-
-        $handle = fopen($this->argument('file'), "r");
-
-        if (($handle = fopen($this->argument('file'), "r")) !== FALSE) {
-            while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                $characters[] = $data;
-            }
-
-            fclose($handle);
-        }*/
-
-
-        var_dump($characters); // yes, now we have something nice to work with!
+        var_dump($data);
 
 
 

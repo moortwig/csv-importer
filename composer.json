@@ -20,8 +20,8 @@
             "database"
         ],
         "psr-4": {
-            "moortwig\\csvimporter\\": "packages/moortwig/csvimporter/src",
-            "App\\": "app/"
+            "App\\": "app/",
+            "Moortwig\\CsvImporter\\": "packages/moortwig/csvimporter/src"
         }
     },
     "autoload-dev": {

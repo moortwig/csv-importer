@@ -1,18 +1,20 @@
 {
-    "name": ":vendor/:package_name",
-    "description": ":package_description",
+    "name": "moortwig/csvimporter",
+    "description": "A helper to make csv file handling less painful",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "moortwig",
+        "csv",
+        "import",
+        "file",
+        "helpers"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/moortwig/csv-importer",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
-            "role": "Developer"
+            "name": "Catarina Höstlöf",
+            "email": "catarina@moortwig.se",
+            "homepage": "http://moortwig.se/"
         }
     ],
     "require": {
@@ -25,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "Moortwig\\CsvImporter\\": "packages/moortwig/csvimporter/src",
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\Test\\": "tests"
+            "Moortwig\\CsvImporter\\": "packages/moortwig/csvimporter/src",
         }
     },
     "scripts": {

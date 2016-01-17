@@ -137,6 +137,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         JeroenG\Packager\PackagerServiceProvider::class,
+        // Moortwig\CsvImporterServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -145,8 +146,6 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-        // moortwig\csvimporter\csvimporterServiceProvider::class,
 
     ],
 
